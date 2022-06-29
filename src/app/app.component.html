@@ -1,0 +1,12 @@
+<hello
+  name="{{ name }}"
+  testage="{{ age }}"
+  (sendData)="receivedData($event)"
+></hello>
+<p>Start editing to see some magic happen :)</p>
+<p>{{ location }}</p>
+<p>{{ binddata }}</p>
+<div *ngFor="let user of userDetails">
+  <p>{{ user.id }}</p>
+  <p>{{ user.email }}</p>
+</div>
